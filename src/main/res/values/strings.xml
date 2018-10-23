@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UrsTruly</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="Name">Name: </string>
+    <string name="mobile">Mobile</string>
+    <string name="emergency">Emergency</string>
+</resources>

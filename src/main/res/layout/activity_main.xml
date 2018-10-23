@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.urstruly.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.example.android.justjava.MainActivity">
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_marginTop="10dp"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                style="@style/EdittextStyle" />
+
+            <EditText
+                android:id="@+id/address_input"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                style="@style/EdittextStyle" />
+
+            <EditText
+                android:id="@+id/number_input"
+                android:hint="@string/mobile"
+                android:inputType="phone"
+                style="@style/EdittextStyle" />
+
+            <EditText
+                android:id="@+id/reason_input"
+                android:hint="@string/emergency"
+                android:inputType="textAutoCorrect"
+                style="@style/EdittextStyle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image1"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/emergency" />
+                <TextView
+                    android:layout_above="@+id/b11"
+                    style="@style/TextStyle"
+                    android:text="National Emergency Number: 112"
+                    />
+                <Button
+                    android:id="@+id/b11"
+                    android:onClick="call1"
+                    android:layout_alignBottom="@+id/image1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call"
+                    style="@style/ButtonStyle" />
+                <Button
+                    android:id="@+id/b12"
+                    android:onClick="about1"
+                    android:layout_alignBottom="@+id/image1"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b11"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b13"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image1"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b12"
+                    android:text="send info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image2"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/police1" />
+                <TextView
+                    android:layout_above="@+id/b21"
+                    style="@style/TextStyle"
+                    android:text="Police: 100"
+                    />
+                <Button
+                    android:id="@+id/b21"
+                    android:onClick="call2"
+                    android:layout_alignBottom="@+id/image2"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b22"
+                    android:onClick="about2"
+                    android:layout_alignBottom="@+id/image2"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b21"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b23"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image2"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b22"
+                    android:text="send info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image3"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/fire" />
+                <TextView
+                    android:layout_above="@+id/b31"
+                    style="@style/TextStyle"
+                    android:text="Fire: 101"
+                    />
+                <Button
+                    android:id="@+id/b31"
+                    android:onClick="call3"
+                    android:layout_alignBottom="@+id/image3"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b32"
+                    android:onClick="about3"
+                    android:layout_alignBottom="@+id/image3"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b31"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b33"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image3"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b32"
+                    android:text="send info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image4"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/amb" />
+                <TextView
+                    android:layout_above="@+id/b41"
+                    style="@style/TextStyle"
+                    android:text="Ambulance: 102"
+                    />
+                <Button
+                    android:id="@+id/b41"
+                    android:onClick="call4"
+                    android:layout_alignBottom="@+id/image4"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b42"
+                    android:onClick="about4"
+                    android:layout_alignBottom="@+id/image4"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b41"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b43"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image4"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b42"
+                    android:text="send info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image5"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/disastermanagement" />
+                <TextView
+                    android:layout_above="@+id/b51"
+                    style="@style/TextStyle"
+                    android:text="Disaster Management Services: 108"
+                    />
+                <Button
+                    android:id="@+id/b51"
+                    android:onClick="call5"
+                    android:layout_alignBottom="@+id/image5"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b52"
+                    android:onClick="about5"
+                    android:layout_alignBottom="@+id/image5"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b51"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b53"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image5"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b52"
+                    android:text="send info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image6"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/womanhelpline" />
+                <TextView
+                    android:layout_above="@+id/b61"
+                    style="@style/TextStyle"
+                    android:text="Woman Helpline: 1091"
+                    />
+                <Button
+                    android:id="@+id/b61"
+                    android:onClick="call6"
+                    android:layout_alignBottom="@+id/image6"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b62"
+                    android:onClick="about6"
+                    android:layout_alignBottom="@+id/image6"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b61"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b63"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image6"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b62"
+                    android:text="send info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image7"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/domesticviolence" />
+                <TextView
+                    android:layout_above="@+id/b71"
+                    style="@style/TextStyle"
+                    android:text="Woman Helpline(Domestic Abuse): 181"
+                    />
+                <Button
+                    android:id="@+id/b71"
+                    android:onClick="call7"
+                    android:layout_alignBottom="@+id/image7"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b72"
+                    android:onClick="about7"
+                    android:layout_alignBottom="@+id/image7"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b71"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b73"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image7"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b72"
+                    android:text="send info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image8"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/airamb" />
+                <TextView
+                    android:layout_above="@+id/b81"
+                    style="@style/TextStyle"
+                    android:text="Air Ambulance: 9540161344"
+                    />
+                <Button
+                    android:id="@+id/b81"
+                    android:onClick="call8"
+                    android:layout_alignBottom="@+id/image8"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b82"
+                    android:onClick="about8"
+                    android:layout_alignBottom="@+id/image8"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b81"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b83"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image8"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b82"
+                    android:text="send info" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image9"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/childabuse" />
+                <TextView
+                    android:layout_above="@+id/b91"
+                    style="@style/TextStyle"
+                    android:text="Child Abuse: 1098"
+                    />
+                <Button
+                    android:id="@+id/b91"
+                    android:onClick="call9"
+                    android:layout_alignBottom="@+id/image9"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b92"
+                    android:onClick="about9"
+                    android:layout_alignBottom="@+id/image9"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b91"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b93"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image9"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b92"
+                    android:text="send info" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image10"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/seniorcitizen" />
+                <TextView
+                    android:layout_above="@+id/b101"
+                    style="@style/TextStyle"
+                    android:text="Senior Citizen Helpline: 1291"
+                    />
+                <Button
+                    android:id="@+id/b101"
+                    android:onClick="call10"
+                    android:layout_alignBottom="@+id/image10"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b102"
+                    android:onClick="about10"
+                    android:layout_alignBottom="@+id/image10"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b101"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b103"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image10"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b102"
+                    android:text="send info" />
+            </RelativeLayout>
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image11"-->
+                    <!--style="@style/ImageStyle"-->
+                    <!--android:src="@drawable/calamities" />-->
+                <!--<TextView-->
+                    <!--android:layout_above="@+id/b111"-->
+                    <!--style="@style/TextStyle"-->
+                    <!--android:text="Relief Commissioner for Natural Calamities: 1070"-->
+                    <!--/>-->
+                <!--<Button-->
+                    <!--android:id="@+id/b111"-->
+                    <!--android:onClick="call11"-->
+                    <!--android:layout_alignBottom="@+id/image11"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="Call" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/b112"-->
+                    <!--android:onClick="about11"-->
+                    <!--android:layout_alignBottom="@+id/image11"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_toRightOf="@+id/b111"-->
+                    <!--android:text="about" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/b113"-->
+                    <!--android:onClick="send1"-->
+                    <!--android:layout_alignBottom="@id/image11"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_toRightOf="@+id/b112"-->
+                    <!--android:text="send info" />-->
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image12"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/roadaccident" />
+                <TextView
+                    android:layout_above="@+id/b121"
+                    style="@style/TextStyle"
+                    android:text="Road Accident Emergency Service: 1073"
+                    />
+                <Button
+                    android:id="@+id/b121"
+                    android:onClick="call12"
+                    android:layout_alignBottom="@+id/image12"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b122"
+                    android:onClick="about12"
+                    android:layout_alignBottom="@+id/image12"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b121"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b123"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image12"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b122"
+                    android:text="send info" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image13"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/railacc" />
+                <TextView
+                    android:layout_above="@+id/b131"
+                    style="@style/TextStyle"
+                    android:text="Railway Accident Emergency Service: 1072"
+                    />
+                <Button
+                    android:id="@+id/b131"
+                    android:onClick="call13"
+                    android:layout_alignBottom="@+id/image13"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b132"
+                    android:onClick="about13"
+                    android:layout_alignBottom="@+id/image13"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b131"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b133"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image13"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b132"
+                    android:text="send info" />
+            </RelativeLayout>
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image14"-->
+                    <!--style="@style/ImageStyle"-->
+                    <!--android:src="@drawable/rail" />-->
+                <!--<TextView-->
+                    <!--android:layout_above="@+id/b141"-->
+                    <!--style="@style/TextStyle"-->
+                    <!--android:text="Railway Enquiry: 139"-->
+                    <!--/>-->
+                <!--<Button-->
+                    <!--android:id="@+id/b141"-->
+                    <!--android:onClick="call14"-->
+                    <!--android:layout_alignBottom="@+id/image14"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="Call" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/b142"-->
+                    <!--android:onClick="about14"-->
+                    <!--android:layout_alignBottom="@+id/image14"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_toRightOf="@+id/b141"-->
+                    <!--android:text="about" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/b143"-->
+                    <!--android:onClick="send1"-->
+                    <!--android:layout_alignBottom="@id/image14"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_toRightOf="@+id/b142"-->
+                    <!--android:text="send info" />-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image15"-->
+                    <!--style="@style/ImageStyle"-->
+                    <!--android:src="@drawable/lpg" />-->
+                <!--<TextView-->
+                    <!--android:layout_above="@+id/b151"-->
+                    <!--style="@style/TextStyle"-->
+                    <!--android:text="LPG : "-->
+                    <!--/>-->
+                <!--<Button-->
+                    <!--android:id="@+id/b151"-->
+                    <!--android:onClick="call15"-->
+                    <!--android:layout_alignBottom="@+id/image15"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="Call" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/b152"-->
+                    <!--android:onClick="about15"-->
+                    <!--android:layout_alignBottom="@+id/image15"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_toRightOf="@+id/b151"-->
+                    <!--android:text="about" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/b153"-->
+                    <!--android:onClick="send1"-->
+                    <!--android:layout_alignBottom="@id/image15"-->
+                    <!--style="@style/ButtonStyle"-->
+                    <!--android:layout_toRightOf="@+id/b152"-->
+                    <!--android:text="send info" />-->
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image16"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/farmer" />
+                <TextView
+                    android:layout_above="@+id/b161"
+                    style="@style/TextStyle"
+                    android:text="Kisan Call Centre: 1551"
+                    />
+                <Button
+                    android:id="@+id/b161"
+                    android:onClick="call16"
+                    android:layout_alignBottom="@+id/image16"
+                    style="@style/ButtonStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="Call" />
+                <Button
+                    android:id="@+id/b162"
+                    android:onClick="about16"
+                    android:layout_alignBottom="@+id/image16"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b161"
+                    android:text="about" />
+                <Button
+                    android:id="@+id/b163"
+                    android:onClick="send1"
+                    android:layout_alignBottom="@id/image16"
+                    style="@style/ButtonStyle"
+                    android:layout_toRightOf="@+id/b162"
+                    android:text="send info" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
